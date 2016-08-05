@@ -144,7 +144,7 @@ module Jekyll
     # Returns true if the extname belongs to the set of extensions
     #   that asset files use.
     def asset_file?
-      sass_file? || coffeescript_file?
+      sass_file? || coffeescript_file? || image_file?
     end
 
     # Determine whether the document is a Sass file.
@@ -161,12 +161,19 @@ module Jekyll
       ".coffee" == extname
     end
 
+    # Determine wheter the document is an image file.
+    #
+    # Returns true if extname == .jpg .jpeg .png .gif .webp, false otherwise.
+    def image_file?
+      %w(.jpg .jpeg .gif .png .webp).include?(extname)
+    end
+
     # Determine whether the file should be rendered with Liquid.
     #
     # Returns false if the document is either an asset file or a yaml file,
     #   true otherwise.
     def render_with_liquid?
-      !(coffeescript_file? || yaml_file?)
+      !(asset_file? || yaml_file?)
     end
 
     # Determine whether the file should be placed into layouts.
