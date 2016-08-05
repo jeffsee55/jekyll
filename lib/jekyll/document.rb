@@ -276,7 +276,7 @@ module Jekyll
 
       if yaml_file?
         @data = SafeYAML.load_file(path)
-      else
+      elsif !asset_file?
         begin
           defaults = @site.frontmatter_defaults.all(
             relative_path,
