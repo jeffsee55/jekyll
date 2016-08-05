@@ -265,7 +265,7 @@ module Jekyll
 
       if yaml_file?
         @data = SafeYAML.load_file(path)
-      else
+      elsif !asset_file?
         begin
           merge_defaults
           read_content(opts)
