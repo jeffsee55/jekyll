@@ -26,3 +26,8 @@ fields:
   name: category
   label: category
   default: release
+- name: image
+  type: file
+  config:
+    maxSize: '1'
+  label: image
