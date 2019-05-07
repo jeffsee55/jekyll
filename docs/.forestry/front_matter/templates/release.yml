@@ -19,3 +19,10 @@ fields:
   name: category
   label: category
   default: release
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: news_item
+  hidden: true
