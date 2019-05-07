@@ -2,6 +2,13 @@
 label: Release
 hide_body: false
 fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  default: news_item
+  hidden: true
 - type: text
   name: title
   label: title
@@ -19,10 +26,3 @@ fields:
   name: category
   label: category
   default: release
-- name: layout
-  type: text
-  config:
-    required: false
-  label: layout
-  default: news_item
-  hidden: true
