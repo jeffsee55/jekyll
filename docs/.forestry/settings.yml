@@ -16,6 +16,8 @@ sections:
   label: Posts
   create: all
   match: "**/*"
+  templates:
+  - release
 - type: directory
   path: docs/_docs
   label: Docs
