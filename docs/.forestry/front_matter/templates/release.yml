@@ -1,0 +1,19 @@
+---
+label: Release
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: author
+  label: author
+- type: text
+  name: version
+  label: version
+- type: text
+  name: category
+  label: category
