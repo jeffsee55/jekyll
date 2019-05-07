@@ -5,15 +5,27 @@ fields:
 - type: text
   name: layout
   label: layout
+  default: news_item
+  hidden: true
 - type: text
   name: title
   label: title
 - type: datetime
   name: date
   label: date
+  default: now
+  config:
+    export_format: YYYY-DD-MM hh:mm:ss ZZ
 - type: text
   name: author
   label: author
 - type: list
   name: categories
   label: categories
+  config:
+    use_select: true
+    source:
+      type: simple
+    options:
+    - community
+    - team
