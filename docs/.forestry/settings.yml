@@ -9,8 +9,7 @@ sections:
 - type: jekyll-posts
   label: News
   create: all
-  match: "**/*"
-  new_doc_ext: ".markdown"
+  new_doc_ext: markdown
   templates:
   - release
 - type: heading
