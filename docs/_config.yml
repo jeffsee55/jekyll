@@ -57,3 +57,4 @@ exclude:
 - CNAME
 - icomoon-selection.json
 - readme.md
+- vendor/bundle
