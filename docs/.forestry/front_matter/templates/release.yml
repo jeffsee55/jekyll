@@ -31,3 +31,5 @@ fields:
   config:
     maxSize: '1'
   label: image
+pages:
+- docs/pages/redirects/pages/page.md
