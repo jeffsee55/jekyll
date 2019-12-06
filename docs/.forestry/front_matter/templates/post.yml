@@ -29,3 +29,5 @@ fields:
     options:
     - community
     - team
+pages:
+- docs/pages/redirects/pages/pages.md
